@@ -1138,3 +1138,54 @@ html, body {
     border: none;
     outline: none; /* Asegúrate de que no haya outline */
 }
+
+/* Base button style */
+.btn_main, .read_bt a, .read_bt_1 a {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 25px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for all buttons */
+.btn_main:hover, .read_bt a:hover, .read_bt_1 a:hover {
+    background-color: #5a2d82; /* Default hover color */
+}
+
+/* Specific category button colors */
+.hand-foot-care-section .btn_main, .hand-foot-care-section .read_bt a, .hand-foot-care-section .read_bt_1 a {
+    background-color: #A8D83F;
+}
+
+.hand-foot-care-section .btn_main:hover, .hand-foot-care-section .read_bt a:hover, .hand-foot-care-section .read_bt_1 a:hover {
+    background-color: darken(#A8D83F, 10%);
+}
+
+.wellness-health-section .btn_main, .wellness-health-section .read_bt a, .wellness-health-section .read_bt_1 a {
+    background-color: #4BC4EA;
+}
+
+.wellness-health-section .btn_main:hover, .wellness-health-section .read_bt a:hover, .wellness-health-section .read_bt_1 a:hover {
+    background-color: darken(#4BC4EA, 10%);
+}
+
+.hair-care-section .btn_main, .hair-care-section .read_bt a, .hair-care-section .read_bt_1 a {
+    background-color: #FBB810;
+}
+
+.hair-care-section .btn_main:hover, .hair-care-section .read_bt a:hover, .hair-care-section .read_bt_1 a:hover {
+    background-color: darken(#FBB810, 10%);
+}
+
+.beauty-style-section .btn_main, .beauty-style-section .read_bt a, .beauty-style-section .read_bt_1 a {
+    background-color: #D12281;
+}
+
+.beauty-style-section .btn_main:hover, .beauty-style-section .read_bt a:hover, .beauty-style-section .read_bt_1 a:hover {
+    background-color: darken(#D12281, 10%);
+}
