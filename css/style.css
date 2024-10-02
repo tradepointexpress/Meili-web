@@ -27,7 +27,7 @@ html {
 }
 
 body {
-    color: #666666;
+    color: #000000;
     font-size: 14px;
     font-family: 'Sen', sans-serif;
     line-height: 1.80857;
@@ -58,7 +58,7 @@ h6 {
     padding: 0 0 10px 0;
     font-weight: normal;
     line-height: normal;
-    color: #111111;
+    color: #000000;
     margin: 0
 }
 
@@ -100,7 +100,7 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-    color: #212121;
+    color: #000000;
     text-decoration: none!important;
     opacity: 1
 }
@@ -125,7 +125,7 @@ p {
 }
 
 a {
-    color: #222222;
+    color: #000000;
     text-decoration: none;
     outline: none !important;
 }
@@ -215,7 +215,7 @@ button {
 .header_section {
     width: 100%;
     float: left;
-    background-color: #8A41D6;
+    background-color: #F4E3FC;
     height: auto;
     background-size: 100%;
 }
@@ -236,14 +236,14 @@ button {
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: #fff;
+    color: #000000;
     font-size: 18px;
     padding: 10px 20px 10px 20px;
 }
 
 .navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .nav-link:hover {
-    color: #FDD807;
+    color: #A93CD6;
 }
 
 .navbar-brand {
@@ -258,13 +258,13 @@ button {
 .search_icon {
     width: 100px;
     float: right;
-    color: #ffffff;
+    color: #000000;
     text-align: right;
     font-size: 18px;
 }
 
 .search_icon:hover {
-    color: #FDD807;
+    color: #A93CD6;
 }
 
 
@@ -335,8 +335,8 @@ button {
     width: 100%;
     float: left;
     padding: 10px 10px;
-    color: #fefefd;
-    background-color: #8A41D6;
+    color: #fff;
+    background-color: #A93CD6;
     text-align: center;
     font-size: 16px;
     border-radius: 40px;
@@ -397,7 +397,7 @@ button {
     width: 100%;
     float: left;
     font-size: 40px;
-    color: #2c2c2c;
+    color: #000000;
     font-weight: 600;
     padding-top: 10px;
 }
@@ -406,7 +406,7 @@ button {
     width: 100%;
     float: left;
     font-size: 16px;
-    color: #2c2c2c;
+    color: #000000;
     margin: 0px;
 }
 
@@ -418,7 +418,7 @@ button {
     width: 100%;
     float: left;
     font-size: 40px;
-    color: #2c2c2c;
+    color: #000000;
     font-weight: 600;
     padding-top: 30px;
 }
@@ -427,7 +427,7 @@ button {
     width: 100%;
     float: left;
     font-size: 16px;
-    color: #2c2c2c;
+    color: #000000;
     margin: 0px;
     padding-top: 55px;
 }
@@ -442,7 +442,7 @@ button {
     width: 100%;
     float: left;
     font-size: 18px;
-    background-color: #8A41D6;
+    background-color: #A93CD6;
     color: #ffffff;
     text-align: center;
     border-radius: 40px;
@@ -451,7 +451,7 @@ button {
 
 .read_bt a:hover {
     color: #fafafa;
-    background-color: #FDD807;
+    background-color: #F4E3FC;
 }
 
 .about_img {
@@ -474,7 +474,7 @@ button {
     width: 100%;
     float: left;
     font-size: 40px;
-    color: #2c2c2c;
+    color: #000000;
     font-weight: bold;
 }
 
@@ -482,7 +482,7 @@ button {
     width: 100%;
     float: left;
     font-size: 16px;
-    color: #2c2c2c;
+    color: #000000;
     margin: 0px;
 }
 .category_subtitle {
@@ -534,8 +534,8 @@ button {
  /* Estilos para los botones */
  .read_bt_1 a,
  .read_bt a {
-    background-color: #A8D83F;
-    color: #fff;
+    background-color: #A93CD6;
+    color: #000000;
     padding: 10px 20px;
     text-decoration: none;
     display: inline-block;
@@ -644,7 +644,7 @@ button {
     width: 100%;
     float: left;
     font-size: 40px;
-    color: #2c2c2c;
+    color: #000000;
     font-weight: 500;
     font-weight: bold;
 }
@@ -653,7 +653,7 @@ button {
     width: 100%;
     float: left;
     font-size: 16px;
-    color: #2c2c2c;
+    color: #000000;
     margin: 0px;
 }
 
@@ -667,7 +667,7 @@ button {
     width: 100%;
     float: left;
     font-size: 40px;
-    color: #2c2c2c;
+    color: #000000;
     font-weight: 600;
     margin-top: 25px;
 }
@@ -676,7 +676,7 @@ button {
     width: 100%;
     float: left;
     font-size: 16px;
-    color: #2c2c2c;
+    color: #000000;
     padding-top: 44px;
     margin: 0px;
 }
@@ -691,7 +691,7 @@ button {
     width: 100%;
     float: left;
     font-size: 18px;
-    background-color: #8A41D6;
+    background-color: #F4E3FC;
     color: #ffffff;
     text-align: center;
     border-radius: 40px;
@@ -700,7 +700,7 @@ button {
 
 .readmore_bt a:hover {
     color: #fafafa;
-    background-color: #FDD807;
+    background-color: #A93CD6;
 }
 
 .blog_img {
@@ -724,7 +724,7 @@ button {
     width: 100%;
     float: left;
     font-size: 40px;
-    color: #2c2c2c;
+    color: #000000;
     font-weight: bold;
     text-align: center;
 }
@@ -777,7 +777,7 @@ button {
     text-align: center;
     font-size: 16px;
     color: #fafafa;
-    background-color: #8A41D6;
+    background-color: #F4E3FC;
     padding: 10px;
     text-transform: uppercase;
     display: block;
@@ -788,7 +788,7 @@ button {
 
 .send_bt a:hover {
     color: #fafafa;
-    background-color: #FDD807;
+    background-color: #A93CD6;
 }
 
 .map_main {
@@ -813,7 +813,7 @@ button {
     width: 100%;
     float: left;
     font-size: 40px;
-    color: #2c2c2c;
+    color: #000000;
     font-weight: bold;
     text-align: center;
 }
@@ -893,7 +893,7 @@ button {
     width: 100%;
     float: left;
     font-size: 16px;
-    color: #8A41D6;
+    color: #F4E3FC;
     margin: 0px;
 }
 
@@ -910,7 +910,7 @@ button {
 .carousel-indicators li {
     width: 30px;
     height: 10px;
-    background-color: #8A41D6;
+    background-color: #A93CD6;
     border-radius: 10px;
 }
 
@@ -929,7 +929,7 @@ button {
 .footer_section {
     width: 100%;
     float: left;
-    background-color: #FDD807;
+    background-color: #F4E3FC;
     height: auto;
     background-size: 100%;
     padding: 90px 0px;
@@ -939,7 +939,7 @@ button {
     width: 100%;
     float: left;
     font-size: 30px;
-    color: #ffffff;
+    color: #000000;
     font-family: 'Sen', sans-serif;
 }
 
@@ -955,11 +955,26 @@ button {
 
 .footer_menu li a {
     font-size: 16px;
-    color: #ffffff;
+    color: #000000;
 }
 
 .footer_menu li a:hover {
-    color: #ffffff;
+    color: #000000;
+}
+
+.angle_icon {
+    font-size: 14px;
+    padding-right: 10px;
+    color: #000000; /* Color de la flecha */
+    transition: color 0.3s ease; /* Transición suave para el color */
+}
+
+.angle_icon:hover {
+    color: #A93CD6; /* Color de la flecha al hacer hover */
+}
+
+.angle_icon.active {
+    color: #F4E3FC; /* Color de la flecha activa */
 }
 
 span.angle_icon {
@@ -968,11 +983,11 @@ span.angle_icon {
 }
 
 span.angle_icon:hover {
-    color: #8A41D6;
+    color: #A93CD6;
 }
 
 span.angle_icon.active {
-    color: #8A41D6;
+    color: #F4E3FC;
 }
 
 .footer_main {
@@ -983,7 +998,7 @@ span.angle_icon.active {
 p.dummy_text {
     width: 70%;
     font-size: 16px;
-    color: #fff;
+    color: #000000;
     margin: 0px;
 }
 
@@ -1006,21 +1021,22 @@ p.dummy_text {
 .social_icon li a {
     float: left;
     padding: 10px 15px;
-    background-color: transparent;
-    border: 1px solid #ffffff;
-    color: #ffffff;
+    background-color: transparent; /* Fondo transparente */
+    border: 1px solid #000000; /* Borde negro */
+    color: #000000; /* Color del icono */
     border-radius: 100%;
     font-size: 16px;
     margin-right: 5px;
     width: 50px;
     text-align: center;
     margin-top: 10px;
+    transition: color 0.3s ease; /* Transición solo para el color del icono */
 }
 
 .social_icon li a:hover {
-    background-color: #ffffff;
-    border: 1px solid #ffffff;
-    color: #FDD807;
+    background-color: transparent; /* Mantener el fondo transparente */
+    border: 1px solid #000000; /* Mantener el borde negro */
+    color: #A93CD6; /* Cambiar solo el color del icono */
 }
 
 .location_text {
@@ -1035,17 +1051,17 @@ p.dummy_text {
 
 .location_text li {
     font-size: 16px;
-    color: #ffffff;
+    color: #000000;
     padding: 0px 0px 10px 0px;
 }
 
 .location_text li a {
-    color: #ffffff;
+    color: #000000;
     display: flex;
 }
 
 .location_text li a:hover {
-    color: #8A41D6;
+    color: #A93CD6;
 }
 
 .padding_left_10 {
@@ -1061,7 +1077,7 @@ p.dummy_text {
 .copyright_section {
     width: 100%;
     float: left;
-    background-color: #FDD807;
+    background-color: #F4E3FC;
     height: auto;
 }
 
@@ -1069,17 +1085,17 @@ p.dummy_text {
     width: 100%;
     float: left;
     font-size: 16px;
-    color: #ffffff;
+    color: #000000;
     text-align: center;
     margin-left: 0px;
 }
 
 .copyright_text a {
-    color: #ffffff;
+    color: #000000;
 }
 
 .copyright_text a:hover {
-    color: #8A41D6;
+    color: #F4E3FC;
 }
 
 
@@ -1089,3 +1105,36 @@ p.dummy_text {
     margin-bottom: 90px;
 }
 
+.btn_main a {
+    width: 100%;
+    float: left;
+    padding: 10px 10px;
+    color: #000000; /* Color de la letra */
+    background-color: #A93CD6; /* Color de fondo */
+    text-align: center;
+    font-size: 16px;
+    border-radius: 40px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.btn_main a:hover {
+    background-color: #F4E3FC; /* Color de fondo al hacer hover */
+}
+
+/* Eliminar márgenes y padding del body y html */
+html, body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Asegurarse de que no haya bordes en el contenedor principal */
+.container, .main, .wrapper {
+    border: none;
+    outline: none; /* Asegúrate de que no haya outline */
+}
