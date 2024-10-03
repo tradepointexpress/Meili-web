@@ -162,13 +162,313 @@
          .carousel-control-next:hover .carousel-control-next-icon:after {
             border-color: #8e44ad; /* Color lila al hacer hover */
          }
+
+         /* Estilos mejorados para el carrusel */
+         .banner_section {
+            padding: 0;
+            overflow: hidden;
+         }
+
+         .carousel-inner {
+            height: 600px; /* Altura fija para el carrusel */
+         }
+
+         .carousel-item {
+            height: 100%;
+         }
+
+         .row {
+            height: 100%;
+            margin: 0;
+         }
+
+         .col-sm-6 {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            padding: 0;
+         }
+
+         .banner_taital_main {
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+         }
+
+         .banner_img {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+         }
+
+         .banner_img img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+         }
+
+         /* Nuevos estilos para los botones del banner */
+         .banner_buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+            margin-top: 20px;
+         }
+
+         .banner_btn {
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            box-sizing: border-box;
+            width: 200px; /* Ancho fijo para ambos botones */
+            text-align: center;
+         }
+
+         /* Estilos base para todos los botones del banner */
+         .banner_btn {
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            box-sizing: border-box;
+         }
+
+         /* Estilos para los botones del primer slide */
+         .carousel-item:first-child .banner_btn_primary {
+            background-color: #8e44ad;
+            color: white;
+            border-color: #8e44ad;
+         }
+
+         .carousel-item:first-child .banner_btn_primary:hover {
+            background-color: transparent;
+            color: #8e44ad;
+         }
+
+         .carousel-item:first-child .banner_btn_secondary {
+            background-color: transparent;
+            color: #8e44ad;
+            border-color: #8e44ad;
+         }
+
+         .carousel-item:first-child .banner_btn_secondary:hover {
+            background-color: #8e44ad;
+            color: white;
+         }
+
+         /* Estilos para los botones de Cuidado de Manos y Pies */
+         #main_slider .carousel-item:nth-child(2) .banner_btn_primary {
+            background-color: var(--hand-foot-care-color);
+            color: white;
+            border-color: var(--hand-foot-care-color);
+         }
+
+         #main_slider .carousel-item:nth-child(2) .banner_btn_primary:hover {
+            background-color: transparent;
+            color: var(--hand-foot-care-color);
+         }
+
+         #main_slider .carousel-item:nth-child(2) .banner_btn_secondary {
+            background-color: transparent;
+            color: var(--hand-foot-care-color);
+            border-color: var(--hand-foot-care-color);
+         }
+
+         #main_slider .carousel-item:nth-child(2) .banner_btn_secondary:hover {
+            background-color: var(--hand-foot-care-color);
+            color: white;
+         }
+
+         /* Estilos para los botones de Bienestar y Salud */
+         #main_slider .carousel-item:nth-child(3) .banner_btn_primary {
+            background-color: var(--wellness-health-color);
+            color: white;
+            border-color: var(--wellness-health-color);
+         }
+
+         #main_slider .carousel-item:nth-child(3) .banner_btn_primary:hover {
+            background-color: transparent;
+            color: var(--wellness-health-color);
+         }
+
+         #main_slider .carousel-item:nth-child(3) .banner_btn_secondary {
+            background-color: transparent;
+            color: var(--wellness-health-color);
+            border-color: var(--wellness-health-color);
+         }
+
+         #main_slider .carousel-item:nth-child(3) .banner_btn_secondary:hover {
+            background-color: var(--wellness-health-color);
+            color: white;
+         }
+
+         /* Estilos para los botones de Belleza y Estilo */
+         #main_slider .carousel-item:nth-child(4) .banner_btn_primary {
+            background-color: var(--beauty-style-color);
+            color: white;
+         }
+
+         #main_slider .carousel-item:nth-child(4) .banner_btn_primary:hover {
+            background-color: transparent;
+            color: var(--beauty-style-color);
+            border: 2px solid var(--beauty-style-color);
+         }
+
+         #main_slider .carousel-item:nth-child(4) .banner_btn_secondary {
+            background-color: transparent;
+            color: var(--beauty-style-color);
+            border: 2px solid var(--beauty-style-color);
+         }
+
+         #main_slider .carousel-item:nth-child(4) .banner_btn_secondary:hover {
+            background-color: var(--beauty-style-color);
+            color: white;
+         }
+
+         /* Estilos para los botones de Cuidado del Cabello */
+         #main_slider .carousel-item:nth-child(5) .banner_btn_primary {
+            background-color: var(--hair-care-color);
+            color: white;
+         }
+
+         #main_slider .carousel-item:nth-child(5) .banner_btn_primary:hover {
+            background-color: transparent;
+            color: var(--hair-care-color);
+            border: 2px solid var(--hair-care-color);
+         }
+
+         #main_slider .carousel-item:nth-child(5) .banner_btn_secondary {
+            background-color: transparent;
+            color: var(--hair-care-color);
+            border: 2px solid var(--hair-care-color);
+         }
+
+         #main_slider .carousel-item:nth-child(5) .banner_btn_secondary:hover {
+            background-color: var(--hair-care-color);
+            color: white;
+         }
+
+         .category_title {
+            text-align: center;
+            margin-top: 10px; /* Aumenta este valor para más espacio */
+            margin-bottom: 10px;
+            font-size: 2.5em;
+            color: #333;
+            font-family: 'Sen', sans-serif; /* Añade esta línea */
+            font-weight: bold; /* Añade esta línea */
+         }
+
+         .category_subtitle {
+            text-align: center;
+            margin-bottom: 15px;
+            font-size: 2em;
+            color: #000000;
+            font-weight: bold;
+         }
+
+         .category-section p {
+            text-align: center;
+            margin-bottom: 30px;
+         }
+
+         /* Nuevo estilo para justificar textos largos */
+         p:not(.banner_text):not(.product_text):not(.product_name):not(.dummy_text),
+         .ipsum_text {
+            text-align: justify;
+         }
+
+         /* Asegurarse de que los textos cortos y específicos no estén justificados */
+         .banner_text,
+         .product_text,
+         .product_name,
+         .dummy_text,
+         h1, h2, h3, h4, h5, h6 {
+            text-align: left;
+         }
+
+         .collage-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 10px;
+            background-color: #261c30;
+            padding: 10px;
+            border-radius: 10px;
+            aspect-ratio: 4 / 3;
+         }
+
+         .collage-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            overflow: hidden;
+            padding: 10px;
+            background-color: #261c30;
+         }
+
+         .collage-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center;
+         }
+
+         .send_bt a {
+            background-color: #261c30; /* Color de fondo del collage */
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+         }
+
+         .send_bt a:hover {
+            background-color: #3a2a47; /* Un tono más claro para el efecto hover */
+         }
+
+         .social_icon {
+            margin-top: 15px;
+         }
+
+         .social_icon ul {
+            padding: 0;
+            margin: 0;
+         }
+
+         .social_icon li {
+            display: inline-block;
+            margin-right: 20px;
+         }
+
+         .social-logo {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+            transition: transform 0.3s ease;
+         }
+
+         .social-logo:hover {
+            transform: scale(1.1);
+         }
       </style>
    </head>
    <body>
       <div class="header_section">
          <div class="container-fluid">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-               <a class="navbar-brand"href="index.html"><img src="images/logo.png"></a>
+               <a class="navbar-brand"href="index.html"><img src="images/logo.png" alt="Logo de Meili"></a>
                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>
                </button>
@@ -204,75 +504,107 @@
       <!-- inicio del borde del diseño -->
       <div class="container-fluid">
          <div class="layout_border">
-            <!-- sección del banner comienza --> 
-            <div class="banner_section layout_padding">
-               <div class="container-fluid">
-                  <div id="main_slider" class="carousel slide" data-ride="carousel">
-                     <div class="carousel-inner">
-                        <div class="carousel-item active">
-                           <div class="row">
-                              <div class="col-sm-6">
-                                 <div class="banner_taital_main">
-                                    <h1 class="banner_taital">Meili: Tu Aliado en Cuidado Personal</h1>
-                                    <p class="banner_text">Descubre nuestra exclusiva colección de herramientas y accesorios para tu bienestar diario</p>
-                                    <div class="btn_main">
-                                       <div class="btn_main"><a href="#categories">Explorar Productos</a></div>
-                                       <div class="btn_main"><a href="#contact">Contáctanos</a></div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="col-sm-6">
-                                 <div class="banner_img"><img src="images/banner-img.png"></div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="carousel-item">
-                           <div class="row">
-                              <div class="col-sm-6">
-                                 <div class="banner_taital_main">
-                                    <h1 class="banner_taital">Calidad y Estilo en Cada Detalle</h1>
-                                    <p class="banner_text">Herramientas especializadas para el cuidado de manos, pies, cabello y más</p>
-                                    <div class="btn_main">
-                                       <div class="btn_main"><a href="#categories">Ver Catálogo</a></div>
-                                       <div class="btn_main"><a href="#contact">Contáctanos</a></div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="col-sm-6">
-                                 <div class="banner_img"><img src="images/banner-img.png"></div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="carousel-item">
-                           <div class="row">
-                              <div class="col-sm-6">
-                                 <div class="banner_taital_main">
-                                    <h1 class="banner_taital">Tu Bienestar, Nuestra Prioridad</h1>
-                                    <p class="banner_text">Encuentra todo lo que necesitas para tu rutina de cuidado personal en un solo lugar</p>
-                                    <div class="btn_main">
-                                       <div class="btn_main"><a href="#categories">Comprar Ahora</a></div>
-                                       <div class="btn_main"><a href="#contact">Contáctanos</a></div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="col-sm-6">
-                                 <div class="banner_img"><img src="images/banner-img.png"></div>
-                              </div>
+      <!-- sección del banner comienza --> 
+      <div class="banner_section">
+         <div id="main_slider" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <div class="row">
+                     <div class="col-sm-6">
+                        <div class="banner_taital_main">
+                           <h1 class="banner_taital">Meili: Tu Aliado en Cuidado Personal</h1>
+                           <p class="banner_text">Descubre nuestra exclusiva colección de herramientas y accesorios para tu bienestar diario</p>
+                           <div class="banner_buttons">
+                              <a href="#categories" class="banner_btn banner_btn_primary">Explorar Categorías</a>
+                              <a href="#contact" class="banner_btn banner_btn_secondary">Contáctanos</a>
                            </div>
                         </div>
                      </div>
-                     <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Anterior</span>
-                     </a>
-                     <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Siguiente</span>
-                     </a>
+                     <div class="col-sm-6">
+                        <div class="banner_img"><img src="images/banner-img.png" alt="Meili - Cuidado Personal"></div>
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <div class="row">
+                     <div class="col-sm-6">
+                        <div class="banner_taital_main">
+                           <h1 class="banner_taital">Cuidado de Manos y Pies</h1>
+                           <p class="banner_text">Herramientas especializadas para el cuidado de tus manos y pies</p>
+                           <div class="banner_buttons">
+                              <a href="#hand-foot-care" class="banner_btn banner_btn_primary">Ver Productos</a>
+                              <a href="#contact" class="banner_btn banner_btn_secondary">Contáctanos</a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-sm-6">
+                        <div class="banner_img"><img src="images/banner-img1.png" alt="Cuidado de Manos y Pies"></div>
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <div class="row">
+                     <div class="col-sm-6">
+                        <div class="banner_taital_main">
+                           <h1 class="banner_taital">Bienestar y Salud</h1>
+                           <p class="banner_text">Artículos para tu bienestar diario y salud personal</p>
+                           <div class="banner_buttons">
+                              <a href="#wellness-health" class="banner_btn banner_btn_primary">Ver Productos</a>
+                              <a href="#contact" class="banner_btn banner_btn_secondary">Contáctanos</a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-sm-6">
+                        <div class="banner_img"><img src="images/banner-img2.png" alt="Bienestar y Salud"></div>
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <div class="row">
+                     <div class="col-sm-6">
+                        <div class="banner_taital_main">
+                           <h1 class="banner_taital">Belleza y Estilo</h1>
+                           <p class="banner_text">Accesorios de belleza para resaltar tu estilo único</p>
+                           <div class="banner_buttons">
+                              <a href="#beauty-style" class="banner_btn banner_btn_primary">Ver Productos</a>
+                              <a href="#contact" class="banner_btn banner_btn_secondary">Contáctanos</a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-sm-6">
+                        <div class="banner_img"><img src="images/banner-img3.png" alt="Belleza y Estilo"></div>
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <div class="row">
+                     <div class="col-sm-6">
+                        <div class="banner_taital_main">
+                           <h1 class="banner_taital">Cuidado del Cabello</h1>
+                           <p class="banner_text">Todo lo que necesitas para mantener tu cabello impecable</p>
+                           <div class="banner_buttons">
+                              <a href="#hair-care" class="banner_btn banner_btn_primary">Ver Productos</a>
+                              <a href="#contact" class="banner_btn banner_btn_secondary">Contáctanos</a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-sm-6">
+                        <div class="banner_img"><img src="images/banner-img4.png" alt="Cuidado del Cabello"></div>
+                     </div>
                   </div>
                </div>
             </div>
-            <!-- sección del banner finalizada -->
+            <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
+               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+               <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
+               <span class="carousel-control-next-icon" aria-hidden="true"></span>
+               <span class="sr-only">Siguiente</span>
+            </a>
+         </div>
+      </div>
+      <!-- sección del banner finalizada -->
             <!-- sección acerca de comienza -->
             <div id="about" class="about_section layout_padding">
                <div class="container">
@@ -286,12 +618,18 @@
                   </div>
                   <div class="row">
                      <div class="col-md-6">
-                        <div class="about_img"><img src="images/about-img.png"></div>
+                        <div class="about_img">
+                           <div class="collage-container">
+                              <div class="collage-item"><img src="images/Meili - Aguamarina con Blanco.png" alt="Meili - Aguamarina con Blanco"></div>
+                              <div class="collage-item"><img src="images/Meili - Verde con Blanco.png" alt="Meili - Verde con Blanco"></div>
+                              <div class="collage-item"><img src="images/Meili - Coral con Blanco.png" alt="Meili - Coral con Blanco"></div>
+                              <div class="collage-item"><img src="images/Meili - Fucsia con Blanco.png" alt="Meili - Fucsia con Blanco"></div>
+                           </div>
+                        </div>
                      </div>
                      <div class="col-md-6">
                         <div class="fresh_taital">Cuidado Personal y Bienestar</div>
                         <p class="ipsum_text">Nuestro compromiso es proporcionar herramientas y artículos que mejoren tu rutina de cuidado personal, promuevan tu salud y realcen tu estilo único. Descubre nuestra amplia gama de productos diseñados para satisfacer tus necesidades.</p>
-                        <div class="btn_main"><a href="#categories">Explorar Productos</a></div>
                      </div>
                   </div>
                </div>
@@ -299,61 +637,35 @@
             <!-- sección acerca de finalizada -->
             
              <!-- sección de categorías comienza -->
-             <div id="categories" class="categories_section layout_padding">
-               <div class="container">
-                  <div class="row">
-                     <div class="col-sm-12">
-                        <h1 class="about_taital" style="text-align: center;">Nuestras Categorías</h1>
-                        <p class="categories_text" style="text-align: center;">Explora nuestras diversas categorías de productos</p>
-                     </div>
-                  </div>
                   <div class="courses_section_2">
                      <!-- Cuidado de Manos y Pies -->
-                     <div id="hand-foot-care" class="row hand-foot-care-section" style="margin-top: 20px;">
-                        <div class="col-sm-12">
-                           <h2 class="category_subtitle" style="text-align: center; font-size: 24px; position: relative;">
-                              Cuidado de Manos y Pies
-                              <span class="underline"></span>
-                           </h2>
-                           <p style="text-align: center;">Cortaúñas, cortacutículas, limas y herramientas esenciales para el cuidado de manos y pies.</p>
-                        </div>
-                        <div class="row" id="hand-foot-care-products"></div>
+                     <div id="hand-foot-care" class="category-section">
+                        <h2 class="category_title" style="color: white; font-size: 0.5em;">4</h2>
+                        <h2 class="category_title">Nuestras Categorías</h2>
+                        <h3 class="category_subtitle" style="margin-top: 30px; margin-bottom: 5px; margin-left: 20px;">Cuidado de Manos y Pies</h3>
+                        <p style="margin-bottom: 10px; margin-left: 20px;">Cortaúñas, cortacutículas, limas y herramientas esenciales para el cuidado de manos y pies.</p>
+                        <div class="row" id="hand-foot-care-products" style="margin-left: 20px;"></div>
                      </div>
 
                      <!-- Bienestar y Salud -->
-                     <div id="wellness-health" class="row wellness-health-section" style="margin-top: 20px;">
-                        <div class="col-sm-12">
-                           <h2 class="category_subtitle" style="text-align: center; font-size: 24px; position: relative;">
-                              Bienestar y Salud
-                              <span class="underline"></span>
-                           </h2>
-                           <p style="text-align: center;">Artículos de higiene y accesorios diseñados para tu bienestar diario.</p>
-                        </div>
-                        <div class="row" id="wellness-health-products"></div>
+                     <div id="wellness-health" class="category-section">
+                        <h3 class="category_subtitle" style="margin-top: 30px; margin-bottom: 5px; margin-left: 20px;">Bienestar y Salud</h3>
+                        <p style="margin-bottom: 10px; margin-left: 20px;">Artículos de higiene y accesorios diseñados para tu bienestar diario.</p>
+                        <div class="row" id="wellness-health-products" style="margin-left: 20px;"></div>
                      </div>
 
                      <!-- Belleza y Estilo -->
-                     <div id="beauty-style" class="row beauty-style-section" style="margin-top: 20px;">
-                        <div class="col-sm-12">
-                           <h2 class="category_subtitle" style="text-align: center; font-size: 24px; position: relative;">
-                              Belleza y Estilo
-                              <span class="underline"></span>
-                           </h2>
-                           <p style="text-align: center;">Accesorios de belleza para resaltar tu estilo personal.</p>
-                        </div>
-                        <div class="row" id="beauty-style-products"></div>
+                     <div id="beauty-style" class="category-section">
+                        <h3 class="category_subtitle" style="margin-top: 30px; margin-bottom: 5px; margin-left: 20px;">Belleza y Estilo</h3>
+                        <p style="margin-bottom: 10px; margin-left: 20px;">Accesorios de belleza para resaltar tu estilo personal.</p>
+                        <div class="row" id="beauty-style-products" style="margin-left: 20px;"></div>
                      </div>
 
                      <!-- Cuidado del Cabello -->
-                     <div id="hair-care" class="row hair-care-section" style="margin-top: 20px;">
-                        <div class="col-sm-12">
-                           <h2 class="category_subtitle" style="text-align: center; font-size: 24px; position: relative;">
-                              Cuidado del Cabello
-                              <span class="underline"></span>
-                           </h2>
-                           <p style="text-align: center;">Artículos para mantener tu cabello arreglado e impecable.</p>
-                        </div>
-                        <div class="row" id="hair-care-products"></div>
+                     <div id="hair-care" class="category-section">
+                        <h3 class="category_subtitle" style="margin-top: 30px; margin-bottom: 5px; margin-left: 20px;">Cuidado del Cabello</h3>
+                        <p style="margin-bottom: 10px; margin-left: 20px;">Artículos para mantener tu cabello arreglado e impecable.</p>
+                        <div class="row" id="hair-care-products" style="margin-left: 20px;"></div>
                      </div>
                   </div>
                </div>
@@ -439,12 +751,18 @@
                      <h3 class="footer_text">Redes sociales</h3>
                      <p class="dummy_text">Síguenos en nuestras redes sociales</p>
                      <div class="social_icon">
-                        <ul class="list-inline">
-                           <li class="list-inline-item"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                           <li class="list-inline-item"><a href="#"><i class="fa fa-tiktok" aria-hidden="true"></i></a></li>
+                              <a href="#" target="_blank" class="social-button">
+                                 <img src="images/instagram-icon-png.png" alt="Instagram" class="social-logo">
+                              </a>
+                           </li>
+                              <a href="#" target="_blank" class="social-button">
+                                 <img src="images/TikTok-Logo.png" alt="TikTok" class="social-logo">
+                              </a>
+                           </li>
                         </ul>
                      </div>
                   </div>
+               </div>
                </div>
             </div>
          </div>
@@ -486,13 +804,27 @@
             productos.forEach(producto => {
                const productElement = document.createElement('div');
                productElement.className = 'col-lg-4 col-md-6 col-sm-12 mb-4';
+               
+               let buttonColor = '';
+               if (producto.categoria === 'Cuidado de manos y pies') {
+                  buttonColor = 'var(--hand-foot-care-color)';
+               } else if (producto.categoria === 'Bienestar y Salud') {
+                  buttonColor = 'var(--wellness-health-color)';
+               } else if (producto.categoria === 'Cuidado del Cabello') {
+                  buttonColor = 'var(--hair-care-color)';
+               } else if (producto.categoria === 'Belleza y Estilo') {
+                  buttonColor = 'var(--beauty-style-color)';
+               }
+
                productElement.innerHTML = `
                   <div class="hover01 column">
                      <figure><img src="${producto.imagen}" alt="${producto.nombre}" class="img-fluid"></figure>
                   </div>
                   <h3 class="product_text text-center text-dark">${producto.codigo}</h3>
                   <h4 class="product_name text-center">${producto.nombre}</h4>
-                  <div class="read_bt_1 text-center"><a href="#" class="btn btn-primary">Ver Más</a></div>
+                  <div class="read_bt_1 text-center">
+                     <a href="#" class="btn" style="background-color: ${buttonColor}; color: white;">Ver Más</a>
+                  </div>
                `;
       
                // Insertar el producto en la categoría correspondiente
