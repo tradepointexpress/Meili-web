@@ -27,6 +27,142 @@
       <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
       <!-- Ajustes para IEs antiguos-->
       <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <style>
+         @font-face {
+            font-family: 'Mainstay';
+            src: url('mainstay/Mainstay.woff2') format('woff2'),
+                 url('mainstay/Mainstay.woff') format('woff'),
+                 url('mainstay/Mainstay.ttf') format('truetype'),
+                 url('mainstay/Mainstay.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+         }
+
+         /* Quitamos la aplicación general de la fuente Mainstay a los títulos */
+         /* h1, h2, h3, h4, h5, h6 {
+            font-family: 'Mainstay', sans-serif;
+         } */
+
+         /* Aplicar la fuente Mainstay solo a elementos específicos que no están en las imágenes */
+         .mainstay-font:not(.footer_text):not(.category_subtitle):not(.contact_taital) {
+            font-family: 'Mainstay', sans-serif;
+         }
+
+         /* Aseguramos que los elementos mostrados en las imágenes no usen Mainstay */
+         .footer_text, .category_subtitle, .contact_taital, 
+         #hand-foot-care h2, #wellness-health h2, #beauty-style h2, #hair-care h2,
+         .product_text {
+            font-family: inherit; /* O especifica otra fuente si lo prefieres */
+         }
+
+         /* ... código existente ... */
+
+         /* Colores para cada categoría */
+         :root {
+            --hand-foot-care-color: #67d6c1; /* Rosa para Cuidado de Manos y Pies */
+            --wellness-health-color: #73c632; /* Verde claro para Bienestar y Salud */
+            --beauty-style-color: #d12281; /* Dorado para Belleza y Estilo */
+            --hair-care-color: #fc5553; /* Azul claro para Cuidado del Cabello */
+         }
+
+         /* Efecto hover para los elementos del navbar */
+         .navbar-nav .nav-item .nav-link {
+            font-weight: bold;
+            transition: color 0.3s ease;
+         }
+
+         .navbar-nav .nav-item:nth-child(2) .nav-link:hover {
+            color: var(--hand-foot-care-color);
+         }
+
+         .navbar-nav .nav-item:nth-child(3) .nav-link:hover {
+            color: var(--wellness-health-color);
+         }
+
+         .navbar-nav .nav-item:nth-child(4) .nav-link:hover {
+            color: var(--beauty-style-color);
+         }
+
+         .navbar-nav .nav-item:nth-child(5) .nav-link:hover {
+            color: var(--hair-care-color);
+         }
+
+         /* ... código existente ... */
+
+         .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px; /* Espacio entre los botones */
+            background-color: transparent;
+            border: none;
+            padding: 0;
+            margin: 0;
+         }
+
+         .btn {
+            border-radius: 25px;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+         }
+
+         .btn-primary {
+            background-color: #f0e6fa; /* Color lila claro */
+            color: black;
+         }
+
+         .btn-secondary {
+            background-color: #8e44ad; /* Color morado */
+            color: white;
+         }
+
+         /* Estilo para las flechas del carrusel */
+         .carousel-control-prev,
+         .carousel-control-next {
+            width: 50px;
+            height: 50px;
+            background-color: rgba(0, 0, 0, 0.1);
+            border-radius: 50%;
+            top: 50%;
+            transform: translateY(-50%);
+         }
+
+         .carousel-control-prev-icon,
+         .carousel-control-next-icon {
+            width: 20px;
+            height: 20px;
+            background-image: none;
+         }
+
+         .carousel-control-prev-icon:after,
+         .carousel-control-next-icon:after {
+            content: '';
+            display: block;
+            width: 20px;
+            height: 20px;
+            border-top: 3px solid black;
+            border-right: 3px solid black;
+            transition: border-color 0.3s ease;
+         }
+
+         .carousel-control-prev-icon:after {
+            transform: rotate(-135deg);
+         }
+
+         .carousel-control-next-icon:after {
+            transform: rotate(45deg);
+         }
+
+         /* Efecto hover */
+         .carousel-control-prev:hover .carousel-control-prev-icon:after,
+         .carousel-control-next:hover .carousel-control-next-icon:after {
+            border-color: #8e44ad; /* Color lila al hacer hover */
+         }
+      </style>
    </head>
    <body>
       <div class="header_section">
@@ -126,10 +262,12 @@
                         </div>
                      </div>
                      <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
-                     <img src="images/arrow-left.png">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
                      </a>
                      <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
-                     <img src="images/arrow-right.png">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Siguiente</span>
                      </a>
                   </div>
                </div>
@@ -315,7 +453,7 @@
       <!-- sección de derechos de autor comienza -->
       <div class="copyright_section">
          <div class="container">
-            <p class="copyright_text text-center">© Tradepoint Express. Todos los Derechos Reservados.</a></p>
+            <p class="copyright_text text-center mainstay-font">© Tradepoint Express. Todos los Derechos Reservados.</p>
          </div>
       </div>
       <!-- sección de derechos de autor finalizada -->
