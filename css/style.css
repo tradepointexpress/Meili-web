@@ -1,8 +1,4 @@
-        /*--------------------------------------------------------------------- File Name: style.css ---------------------------------------------------------------------*/
-
-
-/*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
-
+/* Importación de archivos CSS externos */
 @import url(animate.min.css);
 @import url(normalize.css);
 @import url(icomoon.css);
@@ -15,8 +11,7 @@
 @import url(jquery-ui.css);
 @import url(nice-select.css);
 
-/*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
-
+/* Estilos generales */
 * {
     box-sizing: border-box !important;
     transition: ease all 0.5s;
@@ -35,6 +30,7 @@ body {
     overflow-x: hidden;
 }
 
+/* Estilos de enlaces */
 a {
     color: #1f1f1f;
     text-decoration: none !important;
@@ -46,12 +42,8 @@ a {
     transition: all .3s ease-in-out;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+/* Estilos de encabezados */
+h1, h2, h3, h4, h5, h6 {
     letter-spacing: 0;
     font-weight: normal;
     position: relative;
@@ -62,61 +54,37 @@ h6 {
     margin: 0
 }
 
-h1 {
-    font-size: 24px
-}
+h1 { font-size: 24px }
+h2 { font-size: 22px }
+h3 { font-size: 18px }
+h4 { font-size: 16px }
+h5 { font-size: 14px }
+h6 { font-size: 13px }
 
-h2 {
-    font-size: 22px
-}
-
-h3 {
-    font-size: 18px
-}
-
-h4 {
-    font-size: 16px
-}
-
-h5 {
-    font-size: 14px
-}
-
-h6 {
-    font-size: 13px
-}
-
-*,
-*::after,
-*::before {
+/* Estilos de box-sizing */
+*, *::after, *::before {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
-h1 a,
-h2 a,
-h3 a,
-h4 a,
-h5 a,
-h6 a {
+/* Estilos de enlaces en encabezados */
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     color: #000000;
     text-decoration: none!important;
     opacity: 1
 }
 
-button:focus {
-    outline: none;
-}
+/* Estilos de botones y listas */
+button:focus { outline: none; }
 
-ul,
-li,
-ol {
+ul, li, ol {
     margin: 0px;
     padding: 0px;
     list-style: none;
 }
 
+/* Estilos de párrafos */
 p {
     margin: 20px;
     font-weight: 300;
@@ -124,35 +92,60 @@ p {
     line-height: 24px;
 }
 
-a {
-    color: #000000;
+/* Estilos unificados para botones */
+.btn, .btn_main, .read_bt a, .read_bt_1 a, .started_text a, .banner_btn, .send_bt a {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
     text-decoration: none;
-    outline: none !important;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    cursor: pointer;
 }
 
-a,
-.btn {
-    text-decoration: none !important;
-    outline: none !important;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    -ms-transition: all .3s ease-in-out;
-    -o-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-}
+/* Mantener colores específicos para cada tipo de botón */
+.btn_main a, .started_text a { background-color: #A93CD6; color: #000000; }
+.btn_main a:hover, .started_text a:hover { background-color: #F4E3FC; }
+
+.read_bt a, .read_bt_1 a { background-color: #A93CD6; color: #ffffff; }
+.read_bt a:hover, .read_bt_1 a:hover { background-color: #F4E3FC; color: #000000; }
+
+.banner_btn_primary { background-color: #8e44ad; color: white; }
+.banner_btn_primary:hover { background-color: transparent; color: #8e44ad; border-color: #8e44ad; }
+
+.banner_btn_secondary { background-color: transparent; color: #8e44ad; border-color: #8e44ad; }
+.banner_btn_secondary:hover { background-color: #8e44ad; color: white; }
+
+.send_bt a { background-color: #261c30; color: white; }
+.send_bt a:hover { background-color: #3a2a47; }
+
+/* Mantener estilos específicos para categorías */
+.hand-foot-care-section .btn { background-color: var(--hand-foot-care-color); }
+.hand-foot-care-section .btn:hover { background-color: darken(var(--hand-foot-care-color), 10%); }
+
+.wellness-health-section .btn { background-color: var(--wellness-health-color); }
+.wellness-health-section .btn:hover { background-color: darken(var(--wellness-health-color), 10%); }
+
+.hair-care-section .btn { background-color: var(--hair-care-color); }
+.hair-care-section .btn:hover { background-color: darken(var(--hair-care-color), 10%); }
+
+.beauty-style-section .btn { background-color: var(--beauty-style-color); }
+.beauty-style-section .btn:hover { background-color: darken(var(--beauty-style-color), 10%); }
 
 img {
     max-width: 100%;
     height: auto;
 }
 
- :focus {
-    outline: 0;
-}
+:focus { outline: 0; }
 
-.paddind_bottom_0 {
-    padding-bottom: 0 !important;
-}
+/* Clases de utilidad */
+.paddind_bottom_0 { padding-bottom: 0 !important; }
 
 .btn-custom {
     margin-top: 20px;
@@ -170,24 +163,22 @@ img {
     padding: 0;
 }
 
+/* Estilos de formularios */
 .form-control:focus {
     border-color: #ffffff !important;
     box-shadow: 0 0 0 .2rem rgba(255, 255, 255, .25);
 }
 
-.navbar-form input {
-    border: none !important;
-}
+.navbar-form input { border: none !important; }
 
-.badge {
-    font-weight: 500;
-}
+.badge { font-weight: 500; }
 
 blockquote {
     margin: 20px 0 20px;
     padding: 30px;
 }
 
+/* Estilos de botones */
 button {
     border: 0;
     margin: 0;
@@ -200,18 +191,15 @@ button {
     width: 100%;
 }
 
+/* Clases de utilidad para espaciado */
 .layout_padding {
     padding-top: 100px;
     padding-bottom: 0px;
 }
 
-.padding_0 {
-    padding: 0px;
-}
+.padding_0 { padding: 0px; }
 
-
-/* header section start */
-
+/* Estilos de la sección de encabezado */
 .header_section {
     width: 100%;
     float: left;
@@ -225,16 +213,14 @@ button {
     border-bottom: 1px solid #ffffff;
 }
 
-.bg-light {
-    background-color: transparent !important;
-}
+.bg-light { background-color: transparent !important; }
 
-.mr-auto,
-.mx-auto {
+.mr-auto, .mx-auto {
     margin: 0 auto;
     text-align: center;
 }
 
+/* Estilos de navegación */
 .navbar-light .navbar-nav .nav-link {
     color: #000000;
     font-size: 18px;
@@ -251,10 +237,9 @@ button {
     float: right;
 }
 
-.navbar {
-    padding: 15px 65px;
-}
+.navbar { padding: 15px 65px; }
 
+/* Estilos del icono de búsqueda */
 .search_icon {
     width: 100px;
     float: right;
@@ -263,23 +248,9 @@ button {
     font-size: 18px;
 }
 
-.search_icon:hover {
-    color: #A93CD6;
-}
+.search_icon:hover { color: #A93CD6; }
 
-
-/* header section end */
-
-.layout_border {
-    width: 100%;
-    float: left;
-    border: 1px solid #000;
-    margin: 20px 0px;
-}
-
-
-/* banner section start */
-
+/* Estilos de la sección del banner */
 .banner_section {
     width: 100%;
     float: left;
@@ -293,8 +264,11 @@ button {
 .banner_taital_main {
     width: 100%;
     float: left;
-    padding-left: 90px;
-    padding-top: 90px;
+    padding-left: 80px;
+    padding-top: 80px;
+    padding: 20px; /* Añade espacio alrededor del contenido */
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente para mejorar la legibilidad */
+    border-radius: 10px; /* Bordes redondeados */
 }
 
 .banner_taital {
@@ -320,39 +294,13 @@ button {
     margin: 0 auto;
 }
 
+/* Estilos de botones en el banner */
 .btn_main {
     width: 100%;
     display: flex;
 }
 
-.started_text {
-    width: 170px;
-    margin-right: 20px;
-    margin-top: 30px;
-}
-
-.started_text a {
-    width: 100%;
-    float: left;
-    padding: 10px 10px;
-    color: #fff;
-    background-color: #A93CD6;
-    text-align: center;
-    font-size: 16px;
-    border-radius: 40px;
-    text-transform: uppercase;
-}
-
-.started_text a:hover {
-    color: #fefefd;
-    background-color: #2c2c2c;
-}
-
-.started_text.active a {
-    color: #fefefd;
-    background-color: #2c2c2c;
-}
-
+/* Estilos del carrusel */
 #main_slider a.carousel-control-prev {
     left: 0px;
     top: 220px;
@@ -374,24 +322,17 @@ button {
     margin: 0 auto;
 }
 
-
-/* banner section end */
-
-
-/* about_section section start */
-
+/* Estilos de la sección "Acerca de" */
 .about_section {
     width: 100%;
     float: left;
     background-color: #fff;
     height: auto;
     background-size: 100%;
-    padding: 90px 0px 0px 0px;
+    padding: 70px 0px 0px 0px;
 }
 
-.margin_top0 {
-    margin-top: 0px;
-}
+.margin_top0 { margin-top: 0px; }
 
 .about_taital {
     width: 100%;
@@ -410,9 +351,7 @@ button {
     margin: 0px;
 }
 
-.about_section_2 {
-    padding-top: 50px;
-}
+.about_section_2 { padding-top: 50px; }
 
 .fresh_taital {
     width: 100%;
@@ -432,43 +371,13 @@ button {
     padding-top: 55px;
 }
 
-.read_bt {
-    width: 170px;
-    float: left;
-    padding-top: 55px;
-}
-
-.read_bt a {
-    width: 100%;
-    float: left;
-    font-size: 18px;
-    background-color: #A93CD6;
-    color: #ffffff;
-    text-align: center;
-    border-radius: 40px;
-    padding: 8px;
-}
-
-.read_bt a:hover {
-    color: #fafafa;
-    background-color: #F4E3FC;
-}
-
 .about_img {
     width: 100%;
     float: left;
 }
 
-
-/* about section end */
-
-
-/* vagetables section start */
-
-.vagetables_section {
-    width: 100%;
-    float: left;
-}
+/* Estilos de la sección de vegetales */
+.vagetables_section { width: 100%; float: left; }
 
 .vagetables_taital {
     width: 100%;
@@ -485,160 +394,104 @@ button {
     color: #000000;
     margin: 0px;
 }
+
+/* Estilos de subtítulos de categorías */
 .category_subtitle {
     position: relative;
     display: inline-block;
     padding-bottom: 5px;
     text-align: center;
     font-size: 24px;
- }
- 
- .category_subtitle .underline {
+}
+
+.category_subtitle .underline {
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 30px; /* Tamaño inicial corto */
+    width: 30px;
     height: 3px;
-    background-color: currentColor; /* Use current text color */
+    background-color: currentColor;
     transition: width 0.3s ease-in-out, right 0.3s ease-in-out;
- }
- 
- .category_subtitle:hover .underline {
-    width: 100%; /* Expande a todo el ancho al hacer hover */
+}
+
+.category_subtitle:hover .underline {
+    width: 100%;
     right: 0;
- }
- 
- /* Colores específicos para cada categoría */
- .hand-foot-care-section .category_subtitle .underline {
-    background-color: #A8D83F; /* Color para cuidado de manos y pies */
-    width: 30px; /* Mostrar inicialmente */
- }
- 
- .hand-foot-care-section .category_subtitle:hover .underline {
-    width: 100%; /* Expande a todo el ancho al hacer hover */
-    right: 0;
- }
- 
- .wellness-health-section .category_subtitle .underline {
-    background-color: #4BC4EA; /* Color para bienestar y salud */
- }
- 
- .hair-care-section .category_subtitle .underline {
-    background-color: #FBB810; /* Color para cuidado del cabello */
- }
- 
- .beauty-style-section .category_subtitle .underline {
-    background-color: #D12281; /* Color para belleza y estilo */
- }
- 
- /* Estilos para los botones */
- .read_bt_1 a,
- .read_bt a {
-    background-color: #A93CD6;
-    color: #000000;
-    padding: 10px 20px;
-    text-decoration: none;
-    display: inline-block;
-    transition: background-color 0.3s ease-in-out;
-    border-radius: 5px; /* Ajusta el borde redondeado si es necesario */
-    font-size: 18px; /* Tamaño de letra consistente */
- }
- 
- .read_bt_1 a:hover,
- .read_bt a:hover {
-    background-color: darken(#A8D83F, 10%);
- }
- 
- /* Estilos específicos para cada categoría */
- .hand-foot-care-section .read_bt_1 a {
+}
+
+/* Estilos específicos para cada categoría */
+.hand-foot-care-section .category_subtitle .underline {
     background-color: #A8D83F;
- }
- 
- .hand-foot-care-section .read_bt_1 a:hover {
-    background-color: darken(#A8D83F, 10%);
- }
- 
- .wellness-health-section .read_bt_1 a {
+    width: 30px;
+}
+
+.hand-foot-care-section .category_subtitle:hover .underline {
+    width: 100%;
+    right: 0;
+}
+
+.wellness-health-section .category_subtitle .underline {
     background-color: #4BC4EA;
- }
- 
- .wellness-health-section .read_bt_1 a:hover {
-    background-color: darken(#4BC4EA, 10%);
- }
- 
- .hair-care-section .read_bt_1 a {
+}
+
+.hair-care-section .category_subtitle .underline {
     background-color: #FBB810;
- }
- 
- .hair-care-section .read_bt_1 a:hover {
-    background-color: darken(#FBB810, 10%);
- }
- 
- .beauty-style-section .read_bt_1 a {
+}
+
+.beauty-style-section .category_subtitle .underline {
     background-color: #D12281;
- }
- 
- .beauty-style-section .read_bt_1 a:hover {
-    background-color: darken(#D12281, 10%);
- }
- 
- /* Estilos para las imágenes */
- .hover01 {
+}
+
+/* Estilos para las imágenes */
+.hover01 {
     overflow: hidden;
- }
- 
- .hover01 img {
+}
+
+.hover01 img {
     width: 100%;
     transition: transform 0.3s ease;
- }
- 
- .hover01:hover img {
+}
+
+.hover01:hover img {
     transform: scale(1.1);
- }
- 
- /* Estilos para los textos de los productos */
- .product_text {
+}
+
+/* Estilos para los textos de los productos */
+.product_text {
     text-align: center;
     color: #000;
-    font-size: 16px; /* Tamaño de letra para el código del producto */
- }
- 
- .product_name {
+    font-size: 16px;
+}
+
+.product_name {
     text-align: center;
-    font-size: 20px; /* Tamaño de letra más grande para el nombre del producto */
- }
- 
- /* Estilos responsivos */
- @media (max-width: 768px) {
+    font-size: 20px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
     .col-md-4 {
         flex: 0 0 100%;
         max-width: 100%;
     }
- }
- 
- @media (min-width: 769px) and (max-width: 992px) {
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
     .col-md-4 {
         flex: 0 0 50%;
         max-width: 50%;
     }
- }
- 
- @media (min-width: 993px) {
+}
+
+@media (min-width: 993px) {
     .col-md-4 {
         flex: 0 0 33.3333%;
         max-width: 33.3333%;
     }
- }
-
-/* vagetables section end */
-
-
-/* blog section start */
-
-.blog_section {
-    width: 100%;
-    float: left;
 }
+
+/* Estilos de la sección de blog */
+.blog_section { width: 100%; float: left; }
 
 .blog_taital {
     width: 100%;
@@ -681,43 +534,16 @@ button {
     margin: 0px;
 }
 
-.readmore_bt {
-    width: 170px;
-    float: left;
-    padding-top: 55px;
-}
-
-.readmore_bt a {
-    width: 100%;
-    float: left;
-    font-size: 18px;
-    background-color: #F4E3FC;
-    color: #ffffff;
-    text-align: center;
-    border-radius: 40px;
-    padding: 8px;
-}
-
-.readmore_bt a:hover {
-    color: #fafafa;
-    background-color: #A93CD6;
-}
-
 .blog_img {
     width: 100%;
     float: left;
 }
 
-
-/* blog section end */
-
-
-/* contact section start */
-
+/* Estilos de la sección de contacto */
 .contact_section {
     width: 100%;
     float: left;
-    padding-bottom: 90px;
+    padding-bottom: 70px;
 }
 
 .contact_taital {
@@ -735,10 +561,8 @@ button {
     padding-top: 55px;
 }
 
-.mail_section_1 {
-    width: 100%;
-    float: left;
-}
+/* Estilos del formulario de contacto */
+.mail_section_1 { width: 100%; float: left; }
 
 .mail_text {
     width: 100%;
@@ -767,45 +591,19 @@ button {
     font-family: 'Poppins', sans-serif;
 }
 
-.send_bt {
-    width: 170px;
-    float: left;
-}
-
-.send_bt a {
-    width: 100%;
-    text-align: center;
-    font-size: 16px;
-    color: #fafafa;
-    background-color: #F4E3FC;
-    padding: 10px;
-    text-transform: uppercase;
-    display: block;
-    font-weight: 600;
-    border-radius: 40px;
-    font-family: 'Poppins', sans-serif;
-}
-
-.send_bt a:hover {
-    color: #fafafa;
-    background-color: #A93CD6;
-}
+/* Estilos del botón de envío */
+.send_bt { width: 170px; float: left; }
 
 .map_main {
     width: 100%;
     float: left;
 }
 
-
-/* contact section end */
-
-
-/* testimonial section start */
-
+/* Estilos de la sección de testimonios */
 .testimonial_section {
     width: 100%;
     float: left;
-    padding: 0px 0px 90px 0px;
+    padding: 0px 0px 70px 0px;
     position: relative;
 }
 
@@ -824,17 +622,8 @@ button {
     padding-top: 30px;
 }
 
-.testimonial_section::after {
-    position: absolute;
-    content: '';
-    width: 120px;
-    height: 100px;
-    background-image: url(../images/quote-icon.png);
-    background-size: 100%;
-    left: 40px;
-    top: 130px;
-}
-
+/* Estilos de las comillas en la sección de testimonios */
+.testimonial_section::after,
 .testimonial_section::before {
     position: absolute;
     content: '';
@@ -842,10 +631,19 @@ button {
     height: 100px;
     background-image: url(../images/quote-icon.png);
     background-size: 100%;
+}
+
+.testimonial_section::after {
+    left: 40px;
+    top: 130px;
+}
+
+.testimonial_section::before {
     right: 40px;
     top: 130px;
 }
 
+/* Estilos de la caja de testimonios */
 .testimonial_box {
     width: 73%;
     margin: 0 auto;
@@ -864,6 +662,7 @@ button {
     text-align: center;
 }
 
+/* Estilos del cliente en testimonios */
 .client_main {
     width: 73%;
     margin: 0 auto;
@@ -903,6 +702,7 @@ button {
     margin-top: 10px;
 }
 
+/* Estilos de los indicadores del carrusel */
 .carousel-indicators .active {
     background-color: #242424;
 }
@@ -920,19 +720,14 @@ button {
     margin-right: 0px;
 }
 
-
-/* testimonial section end */
-
-
-/* footer section start */
-
+/* Estilos del pie de página */
 .footer_section {
     width: 100%;
     float: left;
     background-color: #F4E3FC;
     height: auto;
     background-size: 100%;
-    padding: 90px 0px;
+    padding: 50px 0px;
 }
 
 .footer_text {
@@ -943,6 +738,7 @@ button {
     font-family: 'Sen', sans-serif;
 }
 
+/* Estilos del menú del pie de página */
 .footer_menu {
     width: 100%;
     float: left;
@@ -962,19 +758,20 @@ button {
     color: #000000;
 }
 
+/* Estilos de los iconos de ángulo */
 .angle_icon {
     font-size: 14px;
     padding-right: 10px;
-    color: #000000; /* Color de la flecha */
-    transition: color 0.3s ease; /* Transición suave para el color */
+    color: #000000;
+    transition: color 0.3s ease;
 }
 
 .angle_icon:hover {
-    color: #A93CD6; /* Color de la flecha al hacer hover */
+    color: #A93CD6;
 }
 
 .angle_icon.active {
-    color: #F4E3FC; /* Color de la flecha activa */
+    color: #F4E3FC;
 }
 
 span.angle_icon {
@@ -990,9 +787,11 @@ span.angle_icon.active {
     color: #F4E3FC;
 }
 
+/* Estilos del contenido principal del pie de página */
 .footer_main {
-    width: 50%;
-    float: right;
+    width: 100%;
+    float: left;
+    text-align: center;
 }
 
 p.dummy_text {
@@ -1002,43 +801,34 @@ p.dummy_text {
     margin: 0px;
 }
 
+/* Estilos de los iconos sociales */
 .social_icon {
-    width: 100%;
-    float: left;
-    margin-top: 20px;
+    margin-top: 10px;
+    font-size: 0.9em;
 }
 
 .social_icon ul {
-    margin: 0px;
-    padding: 0px;
-    display: inline-block;
+    padding: 0;
+    margin: 0;
 }
 
 .social_icon li {
-    float: left;
+    display: inline-block;
+    margin-right: 10px;
 }
 
-.social_icon li a {
-    float: left;
-    padding: 10px 15px;
-    background-color: transparent; /* Fondo transparente */
-    border: 1px solid #000000; /* Borde negro */
-    color: #000000; /* Color del icono */
-    border-radius: 100%;
-    font-size: 16px;
-    margin-right: 5px;
-    width: 50px;
-    text-align: center;
-    margin-top: 10px;
-    transition: color 0.3s ease; /* Transición solo para el color del icono */
+.social-logo {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
 }
 
-.social_icon li a:hover {
-    background-color: transparent; /* Mantener el fondo transparente */
-    border: 1px solid #000000; /* Mantener el borde negro */
-    color: #A93CD6; /* Cambiar solo el color del icono */
+.social-logo:hover {
+    transform: scale(1.1);
 }
 
+/* Estilos del texto de ubicación */
 .location_text {
     width: 100%;
     float: left;
@@ -1068,12 +858,7 @@ p.dummy_text {
     padding-right: 10px;
 }
 
-
-/* footer section end */
-
-
-/* copyright section start */
-
+/* Estilos de la sección de derechos de autor */
 .copyright_section {
     width: 100%;
     float: left;
@@ -1098,94 +883,447 @@ p.dummy_text {
     color: #F4E3FC;
 }
 
-
-/* copyright section end */
-
+/* Clases de utilidad */
 .margin_bottom90 {
     margin-bottom: 90px;
 }
 
-.btn_main a {
-    width: 100%;
-    float: left;
-    padding: 10px 10px;
-    color: #000000; /* Color de la letra */
-    background-color: #A93CD6; /* Color de fondo */
-    text-align: center;
-    font-size: 16px;
-    border-radius: 40px;
-    text-transform: uppercase;
-    text-decoration: none;
-    display: block;
-    font-weight: 600;
-    font-family: 'Poppins', sans-serif;
-    transition: background-color 0.3s ease;
-}
-
-.btn_main a:hover {
-    background-color: #F4E3FC; /* Color de fondo al hacer hover */
-}
-
-/* Eliminar márgenes y padding del body y html */
+/* Reseteo de márgenes y padding */
 html, body {
     margin: 0;
     padding: 0;
     border: 0;
 }
 
-/* Asegurarse de que no haya bordes en el contenedor principal */
 .container, .main, .wrapper {
     border: none;
-    outline: none; /* Asegúrate de que no haya outline */
+    outline: none;
 }
 
-/* Base button style */
-.btn_main, .read_bt a, .read_bt_1 a {
-    display: inline-block;
-    padding: 10px 20px;
-    border-radius: 25px;
-    color: #fff;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
+@font-face {
+   font-family: 'Mainstay';
+   src: url('mainstay/Mainstay.woff2') format('woff2'),
+        url('mainstay/Mainstay.woff') format('woff'),
+        url('mainstay/Mainstay.ttf') format('truetype'),
+        url('mainstay/Mainstay.otf') format('opentype');
+   font-weight: normal;
+   font-style: normal;
 }
 
-/* Hover effect for all buttons */
-.btn_main:hover, .read_bt a:hover, .read_bt_1 a:hover {
-    background-color: #5a2d82; /* Default hover color */
+/* Quitamos la aplicación general de la fuente Mainstay a los títulos */
+/* h1, h2, h3, h4, h5, h6 {
+   font-family: 'Mainstay', sans-serif;
+} */
+
+/* Aplicar la fuente Mainstay solo a elementos específicos que no están en las imágenes */
+.mainstay-font:not(.footer_text):not(.category_subtitle):not(.contact_taital) {
+   font-family: 'Mainstay', sans-serif;
 }
 
-/* Specific category button colors */
-.hand-foot-care-section .btn_main, .hand-foot-care-section .read_bt a, .hand-foot-care-section .read_bt_1 a {
-    background-color: #A8D83F;
+/* Aseguramos que los elementos mostrados en las imágenes no usen Mainstay */
+.footer_text, .category_subtitle, .contact_taital, 
+#hand-foot-care h2, #wellness-health h2, #beauty-style h2, #hair-care h2,
+.product_text {
+   font-family: inherit; /* O especifica otra fuente si lo prefieres */
 }
 
-.hand-foot-care-section .btn_main:hover, .hand-foot-care-section .read_bt a:hover, .hand-foot-care-section .read_bt_1 a:hover {
-    background-color: darken(#A8D83F, 10%);
+/* Colores para cada categoría */
+:root {
+   --hand-foot-care-color: #67d6c1; /* Rosa para Cuidado de Manos y Pies */
+   --wellness-health-color: #73c632; /* Verde claro para Bienestar y Salud */
+   --beauty-style-color: #d12281; /* Dorado para Belleza y Estilo */
+   --hair-care-color: #fc5553; /* Azul claro para Cuidado del Cabello */
 }
 
-.wellness-health-section .btn_main, .wellness-health-section .read_bt a, .wellness-health-section .read_bt_1 a {
-    background-color: #4BC4EA;
+/* Efecto hover para los elementos del navbar */
+.navbar-nav .nav-item .nav-link {
+   font-weight: bold;
+   transition: color 0.3s ease;
 }
 
-.wellness-health-section .btn_main:hover, .wellness-health-section .read_bt a:hover, .wellness-health-section .read_bt_1 a:hover {
-    background-color: darken(#4BC4EA, 10%);
+.navbar-nav .nav-item:nth-child(2) .nav-link:hover {
+   color: var(--hand-foot-care-color);
 }
 
-.hair-care-section .btn_main, .hair-care-section .read_bt a, .hair-care-section .read_bt_1 a {
-    background-color: #FBB810;
+.navbar-nav .nav-item:nth-child(3) .nav-link:hover {
+   color: var(--wellness-health-color);
 }
 
-.hair-care-section .btn_main:hover, .hair-care-section .read_bt a:hover, .hair-care-section .read_bt_1 a:hover {
-    background-color: darken(#FBB810, 10%);
+.navbar-nav .nav-item:nth-child(4) .nav-link:hover {
+   color: var(--beauty-style-color);
 }
 
-.beauty-style-section .btn_main, .beauty-style-section .read_bt a, .beauty-style-section .read_bt_1 a {
-    background-color: #D12281;
+.navbar-nav .nav-item:nth-child(5) .nav-link:hover {
+   color: var(--hair-care-color);
 }
 
-.beauty-style-section .btn_main:hover, .beauty-style-section .read_bt a:hover, .beauty-style-section .read_bt_1 a:hover {
-    background-color: darken(#D12281, 10%);
+.button-container {
+   display: flex;
+   flex-direction: column;
+   gap: 10px; /* Espacio entre los botones */
+   background-color: transparent;
+   border: none;
+   padding: 0;
+   margin: 0;
+}
+
+/* Estilo para las flechas del carrusel */
+.carousel-control-prev,
+.carousel-control-next {
+   width: 50px;
+   height: 50px;
+   background-color: rgba(0, 0, 0, 0.1);
+   border-radius: 50%;
+   top: 50%;
+   transform: translateY(-50%);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+   width: 20px;
+   height: 20px;
+   background-image: none;
+}
+
+.carousel-control-prev-icon:after,
+.carousel-control-next-icon:after {
+   content: '';
+   display: block;
+   width: 20px;
+   height: 20px;
+   border-top: 3px solid black;
+   border-right: 3px solid black;
+   transition: border-color 0.3s ease;
+}
+
+.carousel-control-prev-icon:after {
+   transform: rotate(-135deg);
+}
+
+.carousel-control-next-icon:after {
+   transform: rotate(45deg);
+}
+
+/* Efecto hover */
+.carousel-control-prev:hover .carousel-control-prev-icon:after,
+.carousel-control-next:hover .carousel-control-next-icon:after {
+   border-color: #8e44ad; /* Color lila al hacer hover */
+}
+
+/* Estilos mejorados para el carrusel */
+.banner_section {
+   padding: 0;
+   overflow: hidden;
+}
+
+.carousel-inner {
+   height: 600px; /* Altura fija para el carrusel */
+}
+
+.carousel-item {
+   height: 100%;
+}
+
+.row {
+   height: 100%;
+   margin: 0;
+}
+
+.col-sm-6 {
+   height: 100%;
+   display: flex;
+   align-items: center;
+   padding: 0;
+}
+
+.banner_taital_main {
+   padding: 40px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   height: 100%;
+}
+
+.banner_img {
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   overflow: hidden;
+}
+
+.banner_img img {
+   max-width: 100%;
+   max-height: 100%;
+   object-fit: cover;
+}
+
+/* Nuevos estilos para los botones del banner */
+.banner_buttons {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   gap: 10px;
+   margin-top: 20px;
+}
+
+.banner_btn {
+   padding: 10px 25px;
+   border-radius: 30px;
+   font-weight: bold;
+   text-decoration: none;
+   transition: all 0.3s ease;
+   border: 2px solid transparent;
+   box-sizing: border-box;
+   width: 200px; /* Ancho fijo para ambos botones */
+   text-align: center;
+}
+
+/* Estilos base para todos los botones del banner */
+.banner_btn {
+   padding: 10px 25px;
+   border-radius: 30px;
+   font-weight: bold;
+   text-decoration: none;
+   transition: all 0.3s ease;
+   border: 2px solid transparent;
+   box-sizing: border-box;
+}
+
+/* Estilos para los botones del primer slide */
+.carousel-item:first-child .banner_btn_primary {
+   background-color: #8e44ad;
+   color: white;
+   border-color: #8e44ad;
+}
+
+.carousel-item:first-child .banner_btn_primary:hover {
+   background-color: transparent;
+   color: #8e44ad;
+}
+
+.carousel-item:first-child .banner_btn_secondary {
+   background-color: transparent;
+   color: #8e44ad;
+   border-color: #8e44ad;
+}
+
+.carousel-item:first-child .banner_btn_secondary:hover {
+   background-color: #8e44ad;
+   color: white;
+}
+
+/* Estilos para los botones de Cuidado de Manos y Pies */
+#main_slider .carousel-item:nth-child(2) .banner_btn_primary {
+   background-color: var(--hand-foot-care-color);
+   color: white;
+   border-color: var(--hand-foot-care-color);
+}
+
+#main_slider .carousel-item:nth-child(2) .banner_btn_primary:hover {
+   background-color: transparent;
+   color: var(--hand-foot-care-color);
+}
+
+#main_slider .carousel-item:nth-child(2) .banner_btn_secondary {
+   background-color: transparent;
+   color: var(--hand-foot-care-color);
+   border-color: var(--hand-foot-care-color);
+}
+
+#main_slider .carousel-item:nth-child(2) .banner_btn_secondary:hover {
+   background-color: var(--hand-foot-care-color);
+   color: white;
+}
+
+/* Estilos para los botones de Bienestar y Salud */
+#main_slider .carousel-item:nth-child(3) .banner_btn_primary {
+   background-color: var(--wellness-health-color);
+   color: white;
+   border-color: var(--wellness-health-color);
+}
+
+#main_slider .carousel-item:nth-child(3) .banner_btn_primary:hover {
+   background-color: transparent;
+   color: var(--wellness-health-color);
+}
+
+#main_slider .carousel-item:nth-child(3) .banner_btn_secondary {
+   background-color: transparent;
+   color: var(--wellness-health-color);
+   border-color: var(--wellness-health-color);
+}
+
+#main_slider .carousel-item:nth-child(3) .banner_btn_secondary:hover {
+   background-color: var(--wellness-health-color);
+   color: white;
+}
+
+/* Estilos para los botones de Belleza y Estilo */
+#main_slider .carousel-item:nth-child(4) .banner_btn_primary {
+   background-color: var(--beauty-style-color);
+   color: white;
+}
+
+#main_slider .carousel-item:nth-child(4) .banner_btn_primary:hover {
+   background-color: transparent;
+   color: var(--beauty-style-color);
+   border: 2px solid var(--beauty-style-color);
+}
+
+#main_slider .carousel-item:nth-child(4) .banner_btn_secondary {
+   background-color: transparent;
+   color: var(--beauty-style-color);
+   border: 2px solid var(--beauty-style-color);
+}
+
+#main_slider .carousel-item:nth-child(4) .banner_btn_secondary:hover {
+   background-color: var(--beauty-style-color);
+   color: white;
+}
+
+/* Estilos para los botones de Cuidado del Cabello */
+#main_slider .carousel-item:nth-child(5) .banner_btn_primary {
+   background-color: var(--hair-care-color);
+   color: white;
+}
+
+#main_slider .carousel-item:nth-child(5) .banner_btn_primary:hover {
+   background-color: transparent;
+   color: var(--hair-care-color);
+   border: 2px solid var(--hair-care-color);
+}
+
+#main_slider .carousel-item:nth-child(5) .banner_btn_secondary {
+   background-color: transparent;
+   color: var(--hair-care-color);
+   border: 2px solid var(--hair-care-color);
+}
+
+#main_slider .carousel-item:nth-child(5) .banner_btn_secondary:hover {
+   background-color: var(--hair-care-color);
+   color: white;
+}
+
+.category_title {
+   text-align: center;
+   margin-top: 10px; /* Aumenta este valor para más espacio */
+   margin-bottom: 10px;
+   font-size: 2.5em;
+   color: #333;
+   font-family: 'Sen', sans-serif; /* Añade esta línea */
+   font-weight: bold; /* Añade esta línea */
+}
+
+.category_subtitle {
+   text-align: center;
+   margin-bottom: 15px;
+   font-size: 2em;
+   color: #000000;
+   font-weight: bold;
+}
+
+.category-section p {
+   text-align: center;
+   margin-bottom: 30px;
+}
+
+/* Nuevo estilo para justificar textos largos */
+p:not(.banner_text):not(.product_text):not(.product_name):not(.dummy_text),
+.ipsum_text {
+   text-align: justify;
+}
+
+/* Asegurarse de que los textos cortos y específicos no estén justificados */
+.banner_text,
+.product_text,
+.product_name,
+.dummy_text,
+h1, h2, h3, h4, h5, h6 {
+   text-align: left;
+}
+
+.collage-container {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: repeat(2, 1fr);
+   gap: 10px;
+   background-color: #261c30;
+   padding: 10px;
+   border-radius: 10px;
+   aspect-ratio: 4 / 3;
+}
+
+.collage-item {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 5px;
+   overflow: hidden;
+   padding: 10px;
+   background-color: #261c30;
+}
+
+.collage-item img {
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+   object-position: center;
+}
+
+.send_bt a {
+   background-color: #261c30; /* Color de fondo del collage */
+   color: white;
+   padding: 10px 20px;
+   text-decoration: none;
+   display: inline-block;
+   border-radius: 5px;
+   transition: background-color 0.3s ease;
+}
+
+.send_bt a:hover {
+   background-color: #3a2a47; /* Un tono más claro para el efecto hover */
+}
+
+.social_icon {
+   margin-top: 15px;
+}
+
+.social_icon ul {
+   padding: 0;
+   margin: 0;
+}
+
+.social_icon li {
+   display: inline-block;
+   margin-right: 20px;
+}
+
+.social-logo {
+   width: 60px;
+   height: 60px;
+   object-fit: contain;
+   transition: transform 0.3s ease;
+}
+
+.social-logo:hover {
+   transform: scale(1.1);
+}
+
+/* Efecto de hover para enlaces */
+.navbar-nav .nav-item .nav-link:hover {
+    transform: scale(1.1); /* Efecto de zoom */
+    color: #A93CD6; /* Cambia el color al hacer hover */
+    transition: transform 0.3s ease, color 0.3s ease; /* Transición suave */
+}
+
+.banner_btn {
+    margin-right: 10px; /* Espacio entre los botones */
+    padding: 10px 20px; /* Tamaño de los botones */
+    border-radius: 5px; /* Bordes redondeados */
+    text-transform: uppercase; /* Texto en mayúsculas */
+}
+
+.banner_buttons {
+    margin-top: 20px; /* Espacio entre el texto y los botones */
 }
