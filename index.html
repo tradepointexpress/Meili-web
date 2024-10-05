@@ -37,24 +37,23 @@
                   <img src="images/Meili - Morado Oscuro2.png" alt="Logo de Meili" class="navbar-logo">
                </a>
                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
+                  <span class="navbar-toggler-icon"></span>
                </button>
                <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav ml-auto">
                      <li class="nav-item">
-                        <a class="nav-link" href="#about">Acerca de</a>
+                        <a class="nav-link mainstay-font" href="#about">Acerca de Nosotros</a>
                      </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="#hand-foot-care">Cuidado de Manos y Pies</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="#wellness-health">Bienestar y Salud</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="#beauty-style">Belleza y Estilo</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="#hair-care">Cuidado del Cabello</a>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           Categorías
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                           <a class="dropdown-item" href="#hand-foot-care">Cuidado de Manos y Pies</a>
+                           <a class="dropdown-item" href="#wellness-health">Bienestar y Salud</a>
+                           <a class="dropdown-item" href="#beauty-style">Belleza y Estilo</a>
+                           <a class="dropdown-item" href="#hair-care">Cuidado del Cabello</a>
+                       </div>
                      </li>
                      <li class="nav-item">
                         <a class="nav-link" href="#contact">Contáctanos</a>
@@ -68,6 +67,7 @@
          </div>
       </div>
       <!-- sección de encabezado finalizada -->
+       
       <!-- inicio del borde del diseño -->
       <div class="container-fluid">
          <div class="layout_border">
@@ -317,37 +317,47 @@
                            <a href="https://wa.me/584122376117" target="_blank">
                            <span class="padding_left_10"><i class="fa fa-phone" aria-hidden="true"></i></span>+58 412 2376117
                            </a>
-                        </li>
-                        <li>
-                           <a href="mailto:sales@tradepointexpress.com">
-                           <span class="padding_left_10"><i class="fa fa-envelope" aria-hidden="true"></i></span>sales@tradepointexpress.com
-                           </a>
-                        </li>
-                     </ul>
-                  </div>
-               </div>
-               <div class="col-lg-4 col-md-6 col-sm-12">
-                  <div class="footer_main text-left">
-                     <h3 class="footer_text">Redes sociales</h3>
-                     <p class="dummy_text">Síguenos en nuestras redes sociales</p>
-                     <div class="social_icon">
+                        </div>
+                     </div>
+                     <div class="col-lg-3 col-md-6 col-sm-12">
+                        <h3 class="footer_text">Dirección</h3>
+                        <div class="location_text text-left">
+                           <ul class="list-unstyled">
+                              <li>
+                                 <a href="https://www.google.com/maps?q=Av.+Milán,+Caracas+1071,+Miranda,+Venezuela" target="_blank">
+                                 <span class="padding_left_10"><i class="fa fa-map-marker" aria-hidden="true"></i></span>Tradepoint Express. C.A.,<br>Av. Milán, Caracas 1071,<br>Miranda, Venezuela.</a>
+                              </li>
+                              <li>
+                                 <a href="https://wa.me/584122376117" target="_blank">
+                                 <span class="padding_left_10"><i class="fa fa-phone" aria-hidden="true"></i></span>+58 412 2376117
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="mailto:sales@tradepointexpress.com">
+                                 <span class="padding_left_10"><i class="fa fa-envelope" aria-hidden="true"></i></span>sales@tradepointexpress.com
+                                 </a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="footer_main text-left">
+                           <h3 class="footer_text">Redes sociales</h3>
+                           <p class="dummy_text">Síguenos en nuestras redes sociales</p>
+                           <div class="social_icon">
                               <a href="#" target="_blank" class="social-button">
                                  <img src="images/instagram-icon-png.png" alt="Instagram" class="social-logo">
                               </a>
-                           </li>
                               <a href="#" target="_blank" class="social-button">
                                  <img src="images/TikTok-Logo.png" alt="TikTok" class="social-logo">
                               </a>
-                           </li>
-                        </ul>
+                           </div>
+                        </div>
                      </div>
                   </div>
                </div>
-               </div>
             </div>
-         </div>
-      </div>
-      <!-- sección de pie de página finalizada -->
+            <!-- sección de pie de página finalizada -->
       <!-- sección de derechos de autor comienza -->
       <div class="copyright_section">
          <div class="container">
@@ -423,5 +433,9 @@
          // Cargar productos al cargar la página
          window.onload = fetchProductos;
       </script>
+
+      <!-- Popper.js, required for Bootstrap dropdowns -->
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+
    </body>
 </html>
