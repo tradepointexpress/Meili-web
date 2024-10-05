@@ -97,7 +97,7 @@ p {
     display: inline-block;
     padding: 10px 20px;
     border-radius: 25px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Sen', sans-serif;
     font-size: 16px;
     font-weight: bold;
     text-align: center;
@@ -206,6 +206,8 @@ button {
     background-color: #F4E3FC;
     height: auto;
     background-size: 100%;
+    position: relative;
+    z-index: 10; /* Asegura que el header esté por encima de otros elementos */
 }
 
 .header_bg {
@@ -259,6 +261,8 @@ button {
     background-size: 100%;
     background-repeat: no-repeat;
     padding: 0px 0px;
+    position: relative;
+    z-index: 5; /* Asegura que el banner esté por debajo del header */
 }
 
 .banner_taital_main {
@@ -330,6 +334,8 @@ button {
     height: auto;
     background-size: 100%;
     padding: 70px 0px 0px 0px;
+    position: relative;
+    z-index: 1; /* Asegúrate de que tenga un z-index mayor si es necesario */
 }
 
 .margin_top0 { margin-top: 0px; }
@@ -402,44 +408,27 @@ button {
     padding-bottom: 5px;
     text-align: center;
     font-size: 24px;
+    transition: color 0.3s ease; /* Añadir transición para el color */
 }
 
-.category_subtitle .underline {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 30px;
-    height: 3px;
-    background-color: currentColor;
-    transition: width 0.3s ease-in-out, right 0.3s ease-in-out;
+.category_subtitle:hover {
+    color: var(--hand-foot-care-color); /* Cambiar el color al hacer hover */
 }
 
-.category_subtitle:hover .underline {
-    width: 100%;
-    right: 0;
+.hand-foot-care-section .category_subtitle:hover {
+    color: var(--hand-foot-care-color);
 }
 
-/* Estilos específicos para cada categoría */
-.hand-foot-care-section .category_subtitle .underline {
-    background-color: #A8D83F;
-    width: 30px;
+.wellness-health-section .category_subtitle:hover {
+    color: var(--wellness-health-color);
 }
 
-.hand-foot-care-section .category_subtitle:hover .underline {
-    width: 100%;
-    right: 0;
+.hair-care-section .category_subtitle:hover {
+    color: var(--hair-care-color);
 }
 
-.wellness-health-section .category_subtitle .underline {
-    background-color: #4BC4EA;
-}
-
-.hair-care-section .category_subtitle .underline {
-    background-color: #FBB810;
-}
-
-.beauty-style-section .category_subtitle .underline {
-    background-color: #D12281;
+.beauty-style-section .category_subtitle:hover {
+    color: var(--beauty-style-color);
 }
 
 /* Estilos para las imágenes */
@@ -574,7 +563,7 @@ button {
     padding: 8px 15px;
     margin-bottom: 30px;
     box-shadow: 0px 0px 20px 0px #d8cecd;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Sen', sans-serif;
 }
 
 .massage-bt {
@@ -588,7 +577,7 @@ button {
     height: 110px;
     margin-bottom: 30px;
     box-shadow: 0px 0px 20px 0px #d8cecd;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Sen', sans-serif;
 }
 
 /* Estilos del botón de envío */
@@ -909,23 +898,9 @@ html, body {
    font-weight: normal;
    font-style: normal;
 }
-
-/* Quitamos la aplicación general de la fuente Mainstay a los títulos */
-/* h1, h2, h3, h4, h5, h6 {
-   font-family: 'Mainstay', sans-serif;
-} */
-
-/* Aplicar la fuente Mainstay solo a elementos específicos que no están en las imágenes */
-.mainstay-font:not(.footer_text):not(.category_subtitle):not(.contact_taital) {
-   font-family: 'Mainstay', sans-serif;
-}
-
-/* Aseguramos que los elementos mostrados en las imágenes no usen Mainstay */
-.footer_text, .category_subtitle, .contact_taital, 
-#hand-foot-care h2, #wellness-health h2, #beauty-style h2, #hair-care h2,
-.product_text {
-   font-family: inherit; /* O especifica otra fuente si lo prefieres */
-}
+.mainstay-font {
+    font-family: 'Mainstay', sans-serif;
+ }
 
 /* Colores para cada categoría */
 :root {
@@ -1252,6 +1227,7 @@ h1, h2, h3, h4, h5, h6 {
    padding: 10px;
    border-radius: 10px;
    aspect-ratio: 4 / 3;
+   pointer-events: auto; /* Asegúrate de que los elementos dentro sean interactivos */
 }
 
 .collage-item {
@@ -1326,4 +1302,44 @@ h1, h2, h3, h4, h5, h6 {
 
 .banner_buttons {
     margin-top: 20px; /* Espacio entre el texto y los botones */
+}
+
+/* Estilos de hover para los elementos del menú desplegable */
+.dropdown-item {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #f4e3fc; /* Color de fondo al hacer hover */
+    color: #000; /* Color del texto al hacer hover */
+}
+
+/* Estilos específicos para cada categoría */
+.dropdown-item[href="#hand-foot-care"]:hover {
+    color: var(--hand-foot-care-color);
+}
+
+.dropdown-item[href="#wellness-health"]:hover {
+    color: var(--wellness-health-color);
+}
+
+.dropdown-item[href="#beauty-style"]:hover {
+    color: var(--beauty-style-color);
+}
+
+.dropdown-item[href="#hair-care"]:hover {
+    color: var(--hair-care-color);
+}
+
+.about_section {
+    position: relative;
+    z-index: 1; /* Asegúrate de que tenga un z-index mayor si es necesario */
+}
+
+.collage-container {
+    pointer-events: auto; /* Asegúrate de que los elementos dentro sean interactivos */
+}
+
+.fresh_taital, .ipsum_text {
+    pointer-events: auto; /* Asegúrate de que los textos sean interactivos */
 }
